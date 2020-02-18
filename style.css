@@ -1,0 +1,64 @@
+:root {
+  --segment-color: rgb(25, 0, 0);
+  --lit-segiment-color: rgb(200, 0, 0);
+}
+
+body {
+  background-color: black;
+}
+
+.numbers {
+  display: block;
+  margin: 60px auto;
+  width: 352px;
+}
+
+.number {
+  display: inline-block;
+}
+
+#ones {
+  margin-left: 40px;
+}
+
+.horiz {
+  margin-left: 20px;
+}
+
+.horiz div {
+  width: 96px;
+  height: 0;
+  border-bottom: 10px solid var(--segment-color);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.horiz.lit div {
+  border-bottom-color: var(--lit-segiment-color);
+}
+
+.horiz-bottom, .vert-right {
+  transform: rotate(180deg);
+}
+
+.vert {
+  display: inline-block;
+}
+
+.vert div {
+  display: inline-block;
+  margin: 0;
+  height: 96px;
+  width: 0;
+  border-right: 10px solid var(--segment-color);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.vert.lit div {
+  border-right-color: var(--lit-segiment-color);
+}
+
+.segment-topright, .segment-bottomright {
+  margin-left: 116px;
+}
